@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dustbin Status</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Firebase Compatibility SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Dustbin Monitoring</h1>
+    <div id="dustbin-info">
+      <img src="dustbin-icon.png" alt="Dustbin Icon" id="dustbin-icon" />
+      <div id="dustbin-details">
+        <p><strong>Dustbin ID:</strong> <span id="dustbin-id">DB-001</span></p>
+        <p><strong>Location:</strong> <span id="dustbin-location">Koni Bilaspur</span></p>
+        <p><strong>Status:</strong> <span id="dustbin-status">Loading...</span></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
